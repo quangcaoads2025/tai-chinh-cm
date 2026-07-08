@@ -60,3 +60,17 @@ Bản này đã thay nút gọi nổi cũ bằng cụm 2 nút cố định bên 
 - Gọi ngay: tel:0836974486
 - Chat Zalo: https://zalo.me/84836974486
 Trên điện thoại, nút gọi trong thanh menu được ẩn để tránh trùng với nút gọi nổi.
+
+
+8. Cập nhật giao diện chuyên nghiệp
+- Đã thay ô chữ CT bằng logo thật trong file assets/ct-logo.webp.
+- Đã tăng khoảng cách giữa logo, tên Công Toại và dòng Tư vấn tài chính.
+- Đã căn lại header: logo bên trái, menu gọn ở giữa, hotline bên phải trên máy tính.
+- Trên điện thoại: ẩn hotline header để tránh rối, menu nằm trong nút mở, nút gọi/Zalo cố định bên phải.
+- Tối ưu lại cỡ chữ hero, khoảng cách menu và trải nghiệm mobile.
+
+
+9. Cập nhật ảnh hero
+- Đã thay ảnh người tư vấn viên bằng banner vay nhanh 3 phút.
+- Ảnh mới nằm tại: assets/hero-consultant.webp
+- Đã bỏ badge nổi trong khung ảnh hero để không che nội dung banner mới.

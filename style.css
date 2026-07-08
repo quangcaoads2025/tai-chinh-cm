@@ -1432,3 +1432,347 @@ details p{
     transform:none;
   }
 }
+
+
+/* =========================================================
+   PRO UI UPDATE - HEADER, LOGO, MENU, MOBILE EXPERIENCE
+   ========================================================= */
+
+.site-header{
+  background:rgba(255,255,255,.94);
+  box-shadow:0 10px 34px rgba(8,38,37,.06);
+}
+
+.nav-wrap{
+  display:grid;
+  grid-template-columns:minmax(245px,1fr) auto minmax(205px,1fr);
+  align-items:center;
+  height:76px;
+  gap:22px;
+}
+
+.brand{
+  gap:13px;
+  min-width:0;
+  justify-self:start;
+}
+
+.brand-mark{
+  width:50px;
+  height:50px;
+  flex:0 0 50px;
+  border-radius:18px;
+  background:#fff;
+  color:var(--green-800);
+  box-shadow:0 12px 28px rgba(8,38,37,.12);
+  border:1px solid rgba(15,118,110,.12);
+  overflow:hidden;
+  padding:5px;
+}
+
+.brand-mark img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:4px;
+  line-height:1.05;
+  min-width:0;
+}
+
+.brand-text strong{
+  font-size:17px;
+  font-weight:900;
+  letter-spacing:-.025em;
+  color:var(--green-950);
+  white-space:nowrap;
+}
+
+.brand-text small{
+  font-size:12.5px;
+  font-weight:700;
+  color:#6b7d84;
+  letter-spacing:-.01em;
+  white-space:nowrap;
+}
+
+.main-nav{
+  justify-self:center;
+  gap:4px;
+  padding:6px;
+  border:1px solid rgba(15,118,110,.12);
+  border-radius:999px;
+  background:rgba(255,255,255,.72);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.5);
+}
+
+.main-nav a{
+  padding:10px 13px;
+  border-radius:999px;
+  color:#465b62;
+  font-size:13px;
+  line-height:1;
+  transition:background .2s ease,color .2s ease,transform .2s ease;
+}
+
+.main-nav a::after{
+  display:none;
+}
+
+.main-nav a:hover,
+.main-nav a:focus{
+  color:var(--green-900);
+  background:var(--green-100);
+  transform:translateY(-1px);
+}
+
+.hotline{
+  justify-self:end;
+  min-height:46px;
+  padding:0 20px;
+  font-size:14px;
+}
+
+.hero h1{
+  letter-spacing:-.055em;
+}
+
+.hero-lead{
+  max-width:620px;
+}
+
+/* Better visual balance for image badges */
+.badge-top{
+  right:-18px;
+}
+
+.badge-bottom{
+  left:-18px;
+}
+
+/* Floating buttons should not cover content too much */
+.lf-float{
+  right:22px;
+  bottom:88px;
+}
+
+.lf-float a{
+  background:#fff;
+}
+
+/* Mobile header */
+@media (max-width:1040px){
+  .nav-wrap{
+    grid-template-columns:auto 1fr auto;
+  }
+
+  .brand{
+    grid-column:1 / 2;
+  }
+
+  .main-nav{
+    grid-column:1 / -1;
+    justify-self:stretch;
+  }
+
+  .hotline{
+    display:none;
+  }
+
+  .nav-toggle{
+    display:block;
+    justify-self:end;
+    grid-column:3 / 4;
+  }
+}
+
+@media (max-width:860px){
+  .site-header{
+    background:rgba(255,255,255,.97);
+  }
+
+  .nav-wrap{
+    height:68px;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:12px;
+  }
+
+  .brand{
+    max-width:260px;
+    gap:11px;
+  }
+
+  .brand-mark{
+    width:44px;
+    height:44px;
+    flex-basis:44px;
+    border-radius:16px;
+    padding:5px;
+  }
+
+  .brand-text{
+    gap:5px;
+  }
+
+  .brand-text strong{
+    font-size:16px;
+  }
+
+  .brand-text small{
+    font-size:12px;
+  }
+
+  .nav-toggle{
+    width:46px;
+    height:46px;
+    border-radius:14px;
+    background:var(--green-50);
+    border:1px solid rgba(15,118,110,.12);
+  }
+
+  .main-nav{
+    position:absolute;
+    left:14px;
+    right:14px;
+    top:76px;
+    display:grid;
+    padding:10px;
+    gap:4px;
+    border-radius:22px;
+    background:rgba(255,255,255,.98);
+    box-shadow:0 24px 70px rgba(8,38,37,.18);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-10px);
+  }
+
+  .main-nav.is-open{
+    opacity:1;
+    visibility:visible;
+    transform:none;
+  }
+
+  .main-nav a{
+    border-radius:14px;
+    padding:14px 16px;
+    text-align:left;
+    font-size:14px;
+  }
+
+  .hero{
+    padding-top:38px;
+  }
+
+  .hero h1{
+    font-size:clamp(34px,9vw,48px);
+    line-height:1.07;
+    letter-spacing:-.055em;
+  }
+
+  .hero-lead{
+    font-size:15.5px;
+    line-height:1.75;
+  }
+
+  .hero-grid{
+    gap:34px;
+  }
+
+  .hero-visual img{
+    border-radius:24px;
+  }
+
+  .float-badge{
+    font-size:12px;
+  }
+}
+
+@media (max-width:520px){
+  .container{
+    width:min(100% - 28px,var(--container));
+  }
+
+  .brand{
+    max-width:220px;
+  }
+
+  .brand-mark{
+    width:42px;
+    height:42px;
+    flex-basis:42px;
+    border-radius:15px;
+  }
+
+  .brand-text strong{
+    font-size:15.5px;
+  }
+
+  .brand-text small{
+    font-size:11.5px;
+  }
+
+  .hero-actions{
+    margin-top:26px;
+  }
+
+  .badge-top{
+    right:8px;
+    top:12px;
+  }
+
+  .badge-bottom{
+    left:8px;
+    bottom:8px;
+  }
+
+  .lf-float{
+    right:12px;
+    bottom:92px;
+  }
+
+  .lf-float a{
+    width:50px;
+    height:50px;
+  }
+}
+
+
+/* =========================================================
+   HERO IMAGE UPDATE - BANNER VAY NHANH 3 PHÚT
+   ========================================================= */
+.hero-visual-ad{
+  width:min(610px,100%);
+}
+
+.hero-visual-ad img{
+  aspect-ratio:4 / 3;
+  object-fit:cover;
+  object-position:center;
+  border-radius:30px;
+  background:#fff;
+  box-shadow:0 28px 70px rgba(1,29,32,.22);
+  filter:none;
+}
+
+.hero-visual-ad .float-badge{
+  display:none!important;
+}
+
+@media (max-width:1100px){
+  .hero-visual-ad{
+    max-width:660px;
+  }
+}
+
+@media (max-width:640px){
+  .hero-visual-ad img{
+    border-radius:24px;
+  }
+}
