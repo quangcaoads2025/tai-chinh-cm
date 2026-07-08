@@ -74,3 +74,10 @@ Trên điện thoại, nút gọi trong thanh menu được ẩn để tránh tr
 - Đã thay ảnh người tư vấn viên bằng banner vay nhanh 3 phút.
 - Ảnh mới nằm tại: assets/hero-consultant.webp
 - Đã bỏ badge nổi trong khung ảnh hero để không che nội dung banner mới.
+
+
+10. Đã xử lý trong file mới nhất
+- Đã giữ banner vay nhanh 3 phút tại assets/hero-consultant.webp.
+- Đã chèn Google Tag Manager thật: GTM-TRWRXT2S.
+- Đã tối ưu title, meta description, Open Graph, Twitter card và Schema JSON-LD.
+- Đã kiểm tra app.js không lỗi cú pháp.

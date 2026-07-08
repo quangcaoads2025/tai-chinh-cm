@@ -1,0 +1,16 @@
+ĐÃ GẮN SEO + GTM
+
+Google Tag Manager:
+GTM-TRWRXT2S
+
+Ảnh hero hiện tại:
+assets/hero-consultant.webp
+
+SEO đã thêm:
+- Title
+- Meta description
+- Keywords
+- Canonical
+- Open Graph
+- Twitter card
+- Schema FinancialService, WebSite, FAQPage
